@@ -53,15 +53,30 @@ public class JavaFXDemo extends Application{
         gp.add(carRentalFeesLabel, 0, 2);
         gp.add(carRentalFeesField, 1, 2);
         
-        Label milesDrivenLabel = new Label("Miles driven, if a private vehicule was used: ");
+        Label milesDrivenLabel = new Label("Number of miles driven, if a private vehicule was used: ");
         TextField milesDrivenField = new TextField();
         gp.add(milesDrivenLabel, 0, 3);
         gp.add(milesDrivenField, 1, 3);
         
-        Label carRentalFeesLabel = new Label("Amount of car rental fees, if any: ");
-        TextField field = new TextField();
-        gp.add(label, 0, 4);
-        gp.add(field, 1, 4);
+        Label parkingFeesLabel = new Label("Amount of parking fees, if any: ");
+        TextField parkingFeesField = new TextField();
+        gp.add(parkingFeesLabel, 0, 4);
+        gp.add(parkingFeesField, 1, 4);
+        
+        Label taxiChargesLabel = new Label("Amount of taxi charges, if any: ");
+        TextField taxiChargesField = new TextField();
+        gp.add(taxiChargesLabel, 0, 5);
+        gp.add(taxiChargesField, 1, 5);
+        
+        Label registrationFeesLabel = new Label("Conference or seminar registration fees, if any: ");
+        TextField registrationFeesField = new TextField();
+        gp.add(registrationFeesLabel, 0, 6);
+        gp.add(registrationFeesField, 1, 6);
+        
+        Label lodgingChargesLabel = new Label("Lodging charges, per night: ");
+        TextField lodgingChargesField = new TextField();
+        gp.add(lodgingChargesLabel, 0, 7);
+        gp.add(lodgingChargesField, 1, 7);
         
         Scene scene = new Scene(gp, 500, 400);
         scene.getStylesheets().add("demo1.css");
