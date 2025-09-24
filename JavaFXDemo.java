@@ -13,9 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 /**
@@ -93,19 +91,12 @@ public class JavaFXDemo extends Application{
         gp.add(lodgingChargesLabel, 0, 7);
         gp.add(lodgingChargesField, 1, 7);
         
-        Button btn = new Button("OK");
+        Button btn = new Button("Calculate");
         gp.add(btn, 1, 8);
         btn.setOnAction(new ButtonClickHandler());
         
-        
-        //double mealCosts = 37;
-        //double parkingFees = 10 * Double.parseDouble(dayStr);
-        //double taxiCharge = 20 * Double.parseDouble(taxiChargeStr);
-        //double lodgingCharge = 95 * Double.parseDouble(lodgingStr);
-        //double vehiculeCharge = 0.27 * Double.parseDouble(mileStr);
-        
         Scene scene = new Scene(gp, 500, 500);
-        //scene.getStylesheets().add("demo1.css");
+        scene.getStylesheets().add("demo1.css");
         
         primaryStage.setTitle("Business Trip Calculator");
         primaryStage.setScene(scene);
