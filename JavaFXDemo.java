@@ -18,7 +18,7 @@ import javafx.stage.Stage;
 
 /**
  *
- * @author Mihir
+ * @author 6316704
  */
 public class JavaFXDemo extends Application{
 
